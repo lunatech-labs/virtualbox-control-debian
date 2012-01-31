@@ -1,0 +1,22 @@
+# Defaults for vbox-control initscript
+# sourced by /etc/init.d/vbox-control
+# installed at /etc/default/vbox-control by the maintainer scripts
+
+#
+# This is a POSIX shell fragment
+#
+
+# Uncomment to make it work
+#RUN=yes
+
+# User to run the VMs as, vbox if not set
+DAEMONUSER="vbox"
+
+# List of VMs to start at boot and stop at shutdown, separated by whitespace
+VMS=""
+
+# Maximum time to wait for VMs to shut down
+TIMEOUT=60
+
+# Type parameter to add to VBoxManage command line; default: vrdp
+TYPE="vrdp"

@@ -1,0 +1,14 @@
+#!/bin/sh
+# postinst script for vbox-control
+#
+# see: dh_installdeb(1)
+
+set -e
+
+if [ -x "/etc/init.d/vbox-control" ]; then
+	update-rc.d vbox-control defaults 21 19 >/dev/null
+fi
+
+exit 0
+
+

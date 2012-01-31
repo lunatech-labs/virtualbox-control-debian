@@ -1,0 +1,14 @@
+Source: vbox-control
+Section: otherosfs
+Priority: extra
+Maintainer: Francisco José Canedo Dominguez <paco+debian@lunatech.com>
+Build-Depends: debhelper (>= 7)
+Standards-Version: 3.7.3
+Homepage: <insert the upstream URL, if relevant>
+
+Package: vbox-control
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Provides an init script to start VirtualBox instances
+ This package provides an init script to start VirtualBox instances at
+ boot time.
